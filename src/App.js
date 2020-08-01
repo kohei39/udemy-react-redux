@@ -1,10 +1,13 @@
 import React from 'react';
 
 function App() {
+  // const greeting = 'Hi, Tom!';
+  // const dom = <h1 className="App">{greeting}</h1>
   return (
-    <h1 className="App">
-      Hello World!
-    </h1>
+    <React.Fragment>
+      <label htmlFor="bar">bar</label>
+      <input type="text" onChange={() => {console.log('I am clicked')}} />
+    </React.Fragment>
   );
 }
 
